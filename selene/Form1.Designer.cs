@@ -1,4 +1,4 @@
-﻿namespace selene
+namespace selene
 {
     partial class Form1
     {
@@ -39,6 +39,7 @@
             this.stop = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.sMBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -65,14 +66,15 @@
             this.protocolosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1268, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1486, 28);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // protocolosToolStripMenuItem
             // 
             this.protocolosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nBNSToolStripMenuItem});
+            this.nBNSToolStripMenuItem,
+            this.sMBToolStripMenuItem});
             this.protocolosToolStripMenuItem.Name = "protocolosToolStripMenuItem";
             this.protocolosToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
             this.protocolosToolStripMenuItem.Text = "Protocolos";
@@ -80,7 +82,7 @@
             // nBNSToolStripMenuItem
             // 
             this.nBNSToolStripMenuItem.Name = "nBNSToolStripMenuItem";
-            this.nBNSToolStripMenuItem.Size = new System.Drawing.Size(123, 26);
+            this.nBNSToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.nBNSToolStripMenuItem.Text = "NBNS";
             this.nBNSToolStripMenuItem.Click += new System.EventHandler(this.nBNSToolStripMenuItem_Click);
             // 
@@ -89,9 +91,9 @@
             this.OutPut.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
-            this.OutPut.Location = new System.Drawing.Point(793, 31);
+            this.OutPut.Location = new System.Drawing.Point(793, 40);
             this.OutPut.Name = "OutPut";
-            this.OutPut.Size = new System.Drawing.Size(457, 411);
+            this.OutPut.Size = new System.Drawing.Size(681, 411);
             this.OutPut.TabIndex = 4;
             this.OutPut.UseCompatibleStateImageBehavior = false;
             this.OutPut.View = System.Windows.Forms.View.Details;
@@ -99,12 +101,12 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Nombre";
-            this.columnHeader1.Width = 150;
+            this.columnHeader1.Width = 300;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Info";
-            this.columnHeader2.Width = 300;
+            this.columnHeader2.Width = 350;
             // 
             // stop
             // 
@@ -133,12 +135,19 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // sMBToolStripMenuItem
+            // 
+            this.sMBToolStripMenuItem.Name = "sMBToolStripMenuItem";
+            this.sMBToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.sMBToolStripMenuItem.Text = "SMB";
+            this.sMBToolStripMenuItem.Click += new System.EventHandler(this.sMBToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1268, 451);
+            this.ClientSize = new System.Drawing.Size(1486, 459);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Port);
             this.Controls.Add(this.ipAddress);
@@ -170,6 +179,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem sMBToolStripMenuItem;
     }
 }
 
