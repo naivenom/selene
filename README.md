@@ -1,5 +1,5 @@
 # selene
-Recolección de información mediante protocolos y servicios.
+Recolección de información mediante protocolos y servicios. A continuación en la tabla se muestra las clases implementadas en la herramienta y su semejanza con una tool de terceros:
 
 | Clase implementada  | Auxiliary Metasploit|
 | ----- | ------ |
