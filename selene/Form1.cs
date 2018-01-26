@@ -106,9 +106,7 @@ namespace selene
                     Int32 bytes = stream.Read(_protocolRequest, 0, _protocolRequest.Length);
                     responseData = BitConverter.ToString(_protocolRequest, 0, bytes);
                     OutPut.Items.Add(new ListViewItem(new String[] { "Negotiate Protocol Response (bytes): " + bytes.ToString(), responseData }));
-                    // Close everything.
-                    //stream.Close();
-                    //tcpClient.Close();
+                    
                     Byte[] _sessionSetupAndXRequest = { 0x00, 0x00, 0x00, 0x63, 0xff, 0x53, 0x4d, 0x42, 0x73, 0x00, 0x00, 0x00, 0x00, 0x18, 0x01, 0x20,
                     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x18, 0x0e,
                     0x00, 0x00, 0x16, 0x59, 0x0d, 0xff, 0x00, 0x00, 0x00, 0xdf, 0xff, 0x02, 0x00, 0x01, 0x00, 0xa2,
@@ -146,7 +144,7 @@ namespace selene
                     string[] terms = list.ToArray();
                     OutPut.Items.Add(new ListViewItem(new String[] { "Native OS:", terms[45] + terms[46] + terms[47] + terms[48] }));
                     OutPut.Items.Add(new ListViewItem(new String[] { "Version Service:", terms[50] + terms[51] + terms[52] + terms[53] + terms[54] + terms[55] + terms[56] + terms[57] + terms[58] + terms[59] + terms[60] + terms[61] + terms[62] + terms[63] + terms[64] + terms[65] + terms[66] }));
-                    // Close everything.
+                    
                     stream1.Close();
                     tcpClient.Close();
 
