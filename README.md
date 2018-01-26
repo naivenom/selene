@@ -1,5 +1,6 @@
 # selene
-Recolección de información mediante protocolos y servicios. Implementado obtención del hostname vía Netbios, similar al auxiliar de Metasploit "auxiliary/scanner/netbios/nbname"
+Recolección de información mediante protocolos y servicios.
+
 | Clase implementada  | Auxiliary Metasploit|
 | ----- | ------ |
 | NetBios | auxiliary/scanner/netbios/nbname |
